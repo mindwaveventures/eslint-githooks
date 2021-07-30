@@ -1,5 +1,4 @@
 const foo = 'bar';
-foo = 12;
+// This foo = 12;
 
-console.log("Hello")
-
+console.log('Hello', foo);
