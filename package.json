@@ -8,11 +8,7 @@
     "checklint": "./node_modules/.bin/eslint --ignore-path .gitignore ."
   },
   "lint-staged": {
-    "src/**/*.{js}": [
-      "./node_modules/.bin/eslint --ignore-path .gitignore .",
-      "git add"
-    ],
-    "*.js": "eslint --cache --fix"
+    "*.js": "./node_modules/.bin/eslint --ignore-path .gitignore ."
   },
   "keywords": [],
   "author": "",
