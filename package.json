@@ -7,17 +7,18 @@
     "prepare": "husky install",
     "checklint": "./node_modules/.bin/eslint --ignore-path .gitignore ."
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "**/*.js": [
       "./node_modules/.bin/eslint --ignore-path .gitignore .",
       "git add"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
