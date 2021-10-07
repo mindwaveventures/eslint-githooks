@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "prepare": "husky install",
-    "checklint": "./node_modules/.bin/eslint --ignore-path .gitignore ."
+    "checklint": "./node_modules/.bin/eslint --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ext .js,.jsx ."
   },
   "lint-staged": {
     "*.js": "./node_modules/.bin/eslint --ignore-path .gitignore ."

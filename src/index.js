@@ -1,8 +1,10 @@
-const { yellAtName } = require('./funcs');
+const {
+ yellAtName
+} = require ('./funcs');
 
-const foo = 'bar';
+var foo = 'bar';
 // This foo = 12;
 
-// foo = 'foo';
+foo = 'foo';
 
-console.log('Hello', yellAtName(foo));
+console.log ('Hello', yellAtName (foo));
