@@ -2,7 +2,7 @@ const {
  yellAtName
 } = require ('./funcs');
 
-var foo = 'bar';
+let foo = 'bar';
 // This foo = 12;
 
 foo = 'foo';
